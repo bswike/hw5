@@ -64,6 +64,7 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 
 	// } 
 	int i = 0;
+	// 0
 	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
 		bestfit.insert(binCapacity, nxtBinNumber++);
@@ -75,6 +76,7 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.insert(temp->capacity, temp->binNumber);
 	bestfit.erase(temp);
 
+	// 1
 	i++;
 	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
@@ -87,6 +89,7 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.insert(temp->capacity, temp->binNumber);
 	bestfit.erase(temp);
 
+	// 2
 	i++;
 	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
@@ -99,6 +102,7 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.insert(temp->capacity, temp->binNumber);
 	bestfit.erase(temp);
 
+	// 3
 	i++;
 	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
@@ -111,6 +115,7 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.insert(temp->capacity, temp->binNumber);
 	bestfit.erase(temp);
 
+	// 4
 	i++;
 	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
@@ -123,6 +128,7 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.insert(temp->capacity, temp->binNumber);
 	bestfit.erase(temp);
 
+	// 5
 	i++;
 	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
@@ -135,6 +141,7 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.insert(temp->capacity, temp->binNumber);
 	bestfit.erase(temp);
 
+	// 6
 	i++;
 	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
@@ -147,6 +154,23 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.insert(temp->capacity, temp->binNumber);
 	bestfit.erase(temp);
 
+	// 7
+	i++;
+	std::cout << "i: " << i << std::endl;
+	temp = bestfit.find(objectSize[i]);
+	if(temp == NULL) {
+		std::cout << "NULL" << std::endl;
+		bestfit.insert(binCapacity, nxtBinNumber++);
+		temp = bestfit.find(objectSize[i]);
+	}
+	temp->capacity -= objectSize[i];
+	binNumberArray[i] = temp->binNumber;
+	printBinSequence();
+	std::cout << "Capacity: " << temp->capacity << " BinNumber: " << temp->binNumber << std::endl;
+	bestfit.insert(temp->capacity, temp->binNumber);
+	bestfit.erase(temp);
+
+	// 8
 	i++;
 	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
@@ -159,6 +183,7 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.insert(temp->capacity, temp->binNumber);
 	bestfit.erase(temp);
 
+	// 9
 	i++;
 	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
@@ -171,6 +196,7 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.insert(temp->capacity, temp->binNumber);
 	bestfit.erase(temp);
 
+	// 10
 	i++;
 	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
@@ -183,30 +209,7 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.insert(temp->capacity, temp->binNumber);
 	bestfit.erase(temp);
 
-	i++;
-	temp = bestfit.find(objectSize[i]);
-	if(temp == NULL) {
-		bestfit.insert(binCapacity, nxtBinNumber++);
-		temp = bestfit.find(objectSize[i]);
-	}
-	temp->capacity -= objectSize[i];
-	binNumberArray[i] = temp->binNumber;
-	printBinSequence();
-	bestfit.insert(temp->capacity, temp->binNumber);
-	bestfit.erase(temp);
-
-	i++;
-	temp = bestfit.find(objectSize[i]);
-	if(temp == NULL) {
-		bestfit.insert(binCapacity, nxtBinNumber++);
-		temp = bestfit.find(objectSize[i]);
-	}
-	temp->capacity -= objectSize[i];
-	binNumberArray[i] = temp->binNumber;
-	printBinSequence();
-	bestfit.insert(temp->capacity, temp->binNumber);
-	bestfit.erase(temp);
-
+	// 11
 	i++;
 	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {

@@ -130,14 +130,17 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 
 	// 5
 	i++;
+	std::cout << "i: " << i << std::endl;
 	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
+		std::cout << "NULL" << std::endl;
 		bestfit.insert(binCapacity, nxtBinNumber++);
 		temp = bestfit.find(objectSize[i]);
 	}
 	temp->capacity -= objectSize[i];
 	binNumberArray[i] = temp->binNumber;
 	printBinSequence();
+	std::cout << "Capacity: " << temp->capacity << " BinNumber: " << temp->binNumber << std::endl;
 	bestfit.insert(temp->capacity, temp->binNumber);
 	bestfit.erase(temp);
 

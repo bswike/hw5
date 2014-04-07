@@ -67,7 +67,7 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
 		bestfit.insert(binCapacity, nxtBinNumber++);
-		temp = bestfit.find(objectSize[i])
+		temp = bestfit.find(objectSize[i]);
 	}
 	temp->capacity -= objectSize[i];
 	binNumberArray[i] = temp->binNumber;
@@ -76,10 +76,10 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.erase(temp);
 
 	i++;
-	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
 		bestfit.insert(binCapacity, nxtBinNumber++);
-		temp = bestfit.find(objectSize[i])
+		temp = bestfit.find(objectSize[i]);
 	}
 	temp->capacity -= objectSize[i];
 	binNumberArray[i] = temp->binNumber;
@@ -88,10 +88,10 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.erase(temp);
 
 	i++;
-	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
 		bestfit.insert(binCapacity, nxtBinNumber++);
-		temp = bestfit.find(objectSize[i])
+		temp = bestfit.find(objectSize[i]);
 	}
 	temp->capacity -= objectSize[i];
 	binNumberArray[i] = temp->binNumber;
@@ -100,10 +100,10 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.erase(temp);
 
 	i++;
-	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
 		bestfit.insert(binCapacity, nxtBinNumber++);
-		temp = bestfit.find(objectSize[i])
+		temp = bestfit.find(objectSize[i]);
 	}
 	temp->capacity -= objectSize[i];
 	binNumberArray[i] = temp->binNumber;
@@ -112,10 +112,10 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.erase(temp);
 
 	i++;
-	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
 		bestfit.insert(binCapacity, nxtBinNumber++);
-		temp = bestfit.find(objectSize[i])
+		temp = bestfit.find(objectSize[i]);
 	}
 	temp->capacity -= objectSize[i];
 	binNumberArray[i] = temp->binNumber;
@@ -124,10 +124,10 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.erase(temp);
 
 	i++;
-	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
 		bestfit.insert(binCapacity, nxtBinNumber++);
-		temp = bestfit.find(objectSize[i])
+		temp = bestfit.find(objectSize[i]);
 	}
 	temp->capacity -= objectSize[i];
 	binNumberArray[i] = temp->binNumber;
@@ -136,10 +136,10 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.erase(temp);
 
 	i++;
-	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
 		bestfit.insert(binCapacity, nxtBinNumber++);
-		temp = bestfit.find(objectSize[i])
+		temp = bestfit.find(objectSize[i]);
 	}
 	temp->capacity -= objectSize[i];
 	binNumberArray[i] = temp->binNumber;
@@ -148,10 +148,10 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.erase(temp);
 
 	i++;
-	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
 		bestfit.insert(binCapacity, nxtBinNumber++);
-		temp = bestfit.find(objectSize[i])
+		temp = bestfit.find(objectSize[i]);
 	}
 	temp->capacity -= objectSize[i];
 	binNumberArray[i] = temp->binNumber;
@@ -160,10 +160,10 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.erase(temp);
 
 	i++;
-	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
 		bestfit.insert(binCapacity, nxtBinNumber++);
-		temp = bestfit.find(objectSize[i])
+		temp = bestfit.find(objectSize[i]);
 	}
 	temp->capacity -= objectSize[i];
 	binNumberArray[i] = temp->binNumber;
@@ -172,10 +172,10 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.erase(temp);
 
 	i++;
-	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
 		bestfit.insert(binCapacity, nxtBinNumber++);
-		temp = bestfit.find(objectSize[i])
+		temp = bestfit.find(objectSize[i]);
 	}
 	temp->capacity -= objectSize[i];
 	binNumberArray[i] = temp->binNumber;
@@ -184,10 +184,10 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.erase(temp);
 
 	i++;
-	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
 		bestfit.insert(binCapacity, nxtBinNumber++);
-		temp = bestfit.find(objectSize[i])
+		temp = bestfit.find(objectSize[i]);
 	}
 	temp->capacity -= objectSize[i];
 	binNumberArray[i] = temp->binNumber;
@@ -196,10 +196,22 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	bestfit.erase(temp);
 
 	i++;
-	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	temp = bestfit.find(objectSize[i]);
 	if(temp == NULL) {
 		bestfit.insert(binCapacity, nxtBinNumber++);
-		temp = bestfit.find(objectSize[i])
+		temp = bestfit.find(objectSize[i]);
+	}
+	temp->capacity -= objectSize[i];
+	binNumberArray[i] = temp->binNumber;
+	printBinSequence();
+	bestfit.insert(temp->capacity, temp->binNumber);
+	bestfit.erase(temp);
+
+	i++;
+	temp = bestfit.find(objectSize[i]);
+	if(temp == NULL) {
+		bestfit.insert(binCapacity, nxtBinNumber++);
+		temp = bestfit.find(objectSize[i]);
 	}
 	temp->capacity -= objectSize[i];
 	binNumberArray[i] = temp->binNumber;

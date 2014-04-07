@@ -17,6 +17,6 @@ class BinaryTreeNode{
 			if(this->rchild != NULL) {
 				this->rchild->inOrder();
 			}
-			std::cout << this.capacity << std::endl;
+			std::cout << capacity << std::endl;
 		}
 };

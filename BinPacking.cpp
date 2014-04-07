@@ -45,27 +45,165 @@ void BinPacking::bestFitPack(int *objectSize, int numberOfObjects, int binCapaci
 	for(int i = 0; i < numberOfObjects; i++) {
 		binNumberArray[i] = 0;
 	}
-	for(int j = 0;j < numberOfObjects; j++){
-		BinaryTreeNode* temp = bestfit.find(objectSize[j]);
-		if (temp == NULL) {
-			bestfit.insert(binCapacity, nxtBinNumber++);
-			temp = bestfit.find(objectSize[j]);
 
-		}
-		//record the new capacity
-		//erase current node
-		//insert new node wih new capacity
-		temp -> capacity -= objectSize[j];
-		binNumberArray[j] = temp -> binNumber;
-		printBinSequence();
-		bestfit.insert(temp->capacity, temp -> binNumber);
-		//bestfit.erase(temp);
+	// for(int j = 0;j < numberOfObjects; j++){
+	// 	BinaryTreeNode* temp = bestfit.find(objectSize[j]);
+	// 	if (temp == NULL) {
+	// 		bestfit.insert(binCapacity, nxtBinNumber++);
+	// 		temp = bestfit.find(objectSize[j]);
 
-	} 
-	
+	// 	}
+	// 	//record the new capacity
+	// 	//erase current node
+	// 	//insert new node wih new capacity
+	// 	temp -> capacity -= objectSize[j];
+	// 	binNumberArray[j] = temp -> binNumber;
+	// 	printBinSequence();
+	// 	bestfit.insert(temp->capacity, temp -> binNumber);
+	// 	//bestfit.erase(temp);
 
+	// } 
+	int i = 0;
+	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	if(temp == NULL) {
+		bestfit.insert(binCapacity, nxtBinNumber++);
+		temp = bestfit.find(objectSize[i])
+	}
+	temp->capacity -= objectSize[i];
+	binNumberArray[i] = temp->binNumber;
+	printBinSequence();
+	bestfit.insert(temp->capacity, temp->binNumber);
+	bestfit.erase(temp);
 
+	i++;
+	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	if(temp == NULL) {
+		bestfit.insert(binCapacity, nxtBinNumber++);
+		temp = bestfit.find(objectSize[i])
+	}
+	temp->capacity -= objectSize[i];
+	binNumberArray[i] = temp->binNumber;
+	printBinSequence();
+	bestfit.insert(temp->capacity, temp->binNumber);
+	bestfit.erase(temp);
 
+	i++;
+	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	if(temp == NULL) {
+		bestfit.insert(binCapacity, nxtBinNumber++);
+		temp = bestfit.find(objectSize[i])
+	}
+	temp->capacity -= objectSize[i];
+	binNumberArray[i] = temp->binNumber;
+	printBinSequence();
+	bestfit.insert(temp->capacity, temp->binNumber);
+	bestfit.erase(temp);
 
-	
+	i++;
+	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	if(temp == NULL) {
+		bestfit.insert(binCapacity, nxtBinNumber++);
+		temp = bestfit.find(objectSize[i])
+	}
+	temp->capacity -= objectSize[i];
+	binNumberArray[i] = temp->binNumber;
+	printBinSequence();
+	bestfit.insert(temp->capacity, temp->binNumber);
+	bestfit.erase(temp);
+
+	i++;
+	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	if(temp == NULL) {
+		bestfit.insert(binCapacity, nxtBinNumber++);
+		temp = bestfit.find(objectSize[i])
+	}
+	temp->capacity -= objectSize[i];
+	binNumberArray[i] = temp->binNumber;
+	printBinSequence();
+	bestfit.insert(temp->capacity, temp->binNumber);
+	bestfit.erase(temp);
+
+	i++;
+	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	if(temp == NULL) {
+		bestfit.insert(binCapacity, nxtBinNumber++);
+		temp = bestfit.find(objectSize[i])
+	}
+	temp->capacity -= objectSize[i];
+	binNumberArray[i] = temp->binNumber;
+	printBinSequence();
+	bestfit.insert(temp->capacity, temp->binNumber);
+	bestfit.erase(temp);
+
+	i++;
+	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	if(temp == NULL) {
+		bestfit.insert(binCapacity, nxtBinNumber++);
+		temp = bestfit.find(objectSize[i])
+	}
+	temp->capacity -= objectSize[i];
+	binNumberArray[i] = temp->binNumber;
+	printBinSequence();
+	bestfit.insert(temp->capacity, temp->binNumber);
+	bestfit.erase(temp);
+
+	i++;
+	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	if(temp == NULL) {
+		bestfit.insert(binCapacity, nxtBinNumber++);
+		temp = bestfit.find(objectSize[i])
+	}
+	temp->capacity -= objectSize[i];
+	binNumberArray[i] = temp->binNumber;
+	printBinSequence();
+	bestfit.insert(temp->capacity, temp->binNumber);
+	bestfit.erase(temp);
+
+	i++;
+	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	if(temp == NULL) {
+		bestfit.insert(binCapacity, nxtBinNumber++);
+		temp = bestfit.find(objectSize[i])
+	}
+	temp->capacity -= objectSize[i];
+	binNumberArray[i] = temp->binNumber;
+	printBinSequence();
+	bestfit.insert(temp->capacity, temp->binNumber);
+	bestfit.erase(temp);
+
+	i++;
+	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	if(temp == NULL) {
+		bestfit.insert(binCapacity, nxtBinNumber++);
+		temp = bestfit.find(objectSize[i])
+	}
+	temp->capacity -= objectSize[i];
+	binNumberArray[i] = temp->binNumber;
+	printBinSequence();
+	bestfit.insert(temp->capacity, temp->binNumber);
+	bestfit.erase(temp);
+
+	i++;
+	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	if(temp == NULL) {
+		bestfit.insert(binCapacity, nxtBinNumber++);
+		temp = bestfit.find(objectSize[i])
+	}
+	temp->capacity -= objectSize[i];
+	binNumberArray[i] = temp->binNumber;
+	printBinSequence();
+	bestfit.insert(temp->capacity, temp->binNumber);
+	bestfit.erase(temp);
+
+	i++;
+	BinaryTreeNode* temp = bestfit.find(objectSize[i]);
+	if(temp == NULL) {
+		bestfit.insert(binCapacity, nxtBinNumber++);
+		temp = bestfit.find(objectSize[i])
+	}
+	temp->capacity -= objectSize[i];
+	binNumberArray[i] = temp->binNumber;
+	printBinSequence();
+	bestfit.insert(temp->capacity, temp->binNumber);
+	bestfit.erase(temp);
 }

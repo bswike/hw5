@@ -11,11 +11,11 @@ class BinaryTreeNode{
 		int binNumber;
 
 		void inOrder() {
-			if(this->lChild != NULL) {
-				this->lChild->inOrder();
+			if(this->lchild != NULL) {
+				this->lchild->inOrder();
 			}
-			if(this->rChild != NULL) {
-				this->rChild->inOrder();
+			if(this->rchild != NULL) {
+				this->rchild->inOrder();
 			}
 			std::cout << this.capacity << std::endl;
 		}

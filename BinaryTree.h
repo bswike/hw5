@@ -7,7 +7,7 @@ class BinaryTree{
 	public:
 		BinaryTree();
 
-	protected:
+	// protected:
 		BinaryTreeNode* root;
 		int treeSize;
 };

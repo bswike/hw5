@@ -18,6 +18,12 @@ class BinarySearchTree : public BinaryTree{
 		void erase(BinaryTreeNode *n);
 		//returns the best suitable binarytreenode with given objectsize
 		BinaryTreeNode* find(int objectSize);
+
+		// debug
+		void inOrder() {
+			root->inOrder();
+		}
+
        protected:
        int numberOfPlayers;		
 };
